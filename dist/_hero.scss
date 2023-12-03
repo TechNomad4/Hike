@@ -1,0 +1,35 @@
+.hero {
+  @include flex(center, flex-start);
+  font-family: $primaryFont;
+  min-height: 100%;
+
+  > div:nth-child(2) {
+    padding: 0 40px;
+    margin: 3rem 0 0 10rem;
+  }
+
+  h1 {
+    font-size: 88px;
+    line-height: 100px;
+    max-width: 950px;
+    font-weight: 200;
+    margin: 1.5rem 0;
+  }
+
+  a {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+
+    p {
+      font-size: 18px;
+      font-family: $secondaryFont;
+      font-weight: 400;
+      margin-right: 2rem;
+      letter-spacing: 2px;
+    }
+  }
+}

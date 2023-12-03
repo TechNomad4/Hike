@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap");
+
+$primaryFont: "Crimson Text", serif;
+$secondaryFont: "Cabin", sans-serif;
+$primaryColor: #0b1d26;
+$secondaryColor: #fbd784;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin mediaLarge {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mediaMediumLarge {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaMediumLow {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mediaSmall {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

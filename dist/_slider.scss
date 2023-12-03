@@ -1,0 +1,37 @@
+.slider {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  font-family: $secondaryFont;
+  @include flex(flex-end, flex-start);
+
+  ul {
+    list-style-type: none;
+    @include flex(flex-start, flex-end);
+    flex-direction: column;
+
+    li {
+      font-weight: 800;
+      margin-bottom: 35px;
+      cursor: pointer;
+    }
+  }
+
+  .progress {
+    height: 200px;
+    width: 3px;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    margin: 0 2rem;
+    position: relative;
+
+    > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50px;
+      width: 3px;
+      background-color: #fff;
+      transition: all 1.5s ease;
+    }
+  }
+}

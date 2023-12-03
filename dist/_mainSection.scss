@@ -1,0 +1,51 @@
+.mainSection {
+  font-family: $secondaryFont;
+  background-color: $primaryColor;
+  max-width: 75vw;
+  margin: 10rem auto;
+  @include flex(space-between, center);
+  padding-top: 20px;
+
+  > img {
+    zoom: 0.7;
+    padding-left: 60px;
+  }
+
+  h1 {
+    font-family: $primaryFont;
+    font-size: 64px;
+    max-width: 555px;
+    font-weight: 200;
+    margin: 1.5rem 0;
+  }
+
+  p {
+    line-height: 32px;
+    font-size: 18px;
+    max-width: 632px;
+  }
+
+  .subheader {
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+
+  .readMore {
+    @include flex(flex-start, center);
+    padding-top: 10px;
+    cursor: pointer;
+
+    p {
+      color: $secondaryColor;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.essentials {
+  > img {
+    padding: 0 60px 0 0;
+  }
+}

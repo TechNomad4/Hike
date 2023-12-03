@@ -1,0 +1,21 @@
+.sideBar {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  @include flex(center, center);
+  flex-direction: column;
+  font-family: $secondaryFont;
+
+  p {
+    transform: rotate(90deg);
+    margin: 0 0 3rem;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  img {
+    margin: 0.8rem 0;
+    cursor: pointer;
+  }
+}
